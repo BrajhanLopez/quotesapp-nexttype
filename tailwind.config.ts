@@ -1,4 +1,5 @@
 import type { Config } from 'tailwindcss'
+//02. agregamos la fuente en font family
 
 const config: Config = {
   content: [
@@ -8,10 +9,11 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily:{
+      fredokaOne: 'FredokaOne-Regular'
+      },
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'image-green': "url('../assets/images/fondo1.jpg')",    
       },
     },
   },
